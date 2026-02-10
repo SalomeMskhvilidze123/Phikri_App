@@ -25,6 +25,12 @@ Error Translation: Maps low-level persistence errors into user centric meaningfu
 3. PhikriApp (Main Target)
 The composition root and UI layer.
 
+Minimum Deployment Target: Set to iOS 15.0. This allows the app to fully leverage native async/await and Actors without the overhead of legacy completion handlers.
+
+Actors for Data Integrity: All Data Sources are implemented as actor types to prevent Data Races and ensure thread-safe access to local and remote resources.
+
+MainActor: All UI updates are strictly isolated to the @MainActor to prevent background-thread UI corruption.
+
 UI: Built with SwiftUI using the MVVM pattern.
 
 Dependency Injection: Injects concrete repository implementations from PhikriData into the Domain's logic.
