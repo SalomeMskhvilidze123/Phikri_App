@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Packages/PhikriData">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/PhikriDomain">
+   </FileRef>
+   <FileRef
+      location = "group:PhikriApp/PhikriApp.xcodeproj">
+   </FileRef>
+</Workspace>
