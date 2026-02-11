@@ -10,7 +10,7 @@ import CoreData
 import PhikriDomain
 
 
-public final class CoreDataThoughtRepository {
+public final actor CoreDataThoughtRepository {
     private let container: NSPersistentContainer
     
     public init(container: NSPersistentContainer = PersistenceController.shared.container) {
@@ -22,15 +22,14 @@ public final class CoreDataThoughtRepository {
         container.viewContext
     }
 }
-@available(iOS 13.0.0, *)
+
 
 extension CoreDataThoughtRepository:ThoughtRepositoryProtocol {
-
+    
     public func fetchAll() async throws -> [Thought] {
         let request: NSFetchRequest<ThoughtEntity> = ThoughtEntity.fetchRequest()
         
-        if #available(iOS 15.0, *) {
-            return try await context.perform {
+        return try await context.perform {
                 do {
                     let results = try self.context.fetch(request)
                     // თითოეულ Entity-ს ვაქცევთ დომენის მოდელად
@@ -48,14 +47,11 @@ extension CoreDataThoughtRepository:ThoughtRepositoryProtocol {
                     throw DomainError.persistenceFailed(.fetch)
                 }
             }
-        } else {
-            // Fallback on earlier versions
-        }
     }
     
     public func save(_ thought: Thought) async throws {
         // Core Data-სთან მუშაობისას აუცილებელია სწორი Thread-ის გამოყენება
-        if #available(iOS 15.0, *) {
+        do {
             try await context.perform {
                 let entity = ThoughtEntity(context: self.context)
                 
@@ -74,13 +70,11 @@ extension CoreDataThoughtRepository:ThoughtRepositoryProtocol {
                     throw DomainError.persistenceFailed(.save)
                 }
             }
-        } else {
-            // Fallback on earlier versions
         }
-        }
+    }
     
     public func delete(id: UUID) async throws {
-        <#code#>
+        //        <#code#>
     }
     
     

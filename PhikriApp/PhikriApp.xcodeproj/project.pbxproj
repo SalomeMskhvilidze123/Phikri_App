@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		FE2E4D712F34B9E1000C7968 /* PhikriAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2E4D702F34B9E1000C7968 /* PhikriAppApp.swift */; };
 		FE2E4D732F34B9E1000C7968 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2E4D722F34B9E1000C7968 /* ContentView.swift */; };
-		FE2E4D752F34B9E3000C7968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2E4D742F34B9E3000C7968 /* Assets.xcassets */; };
 		FE2E4D782F34B9E3000C7968 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2E4D772F34B9E3000C7968 /* Preview Assets.xcassets */; };
+		FE97F2462F3C48EE0066D3C5 /* ThoughtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97F2452F3C48EE0066D3C5 /* ThoughtViewModel.swift */; };
+		FE97F24C2F3C498F0066D3C5 /* ThoughtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */; };
+		FE97F24F2F3C5B410066D3C5 /* PhikriDomain in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F24E2F3C5B410066D3C5 /* PhikriDomain */; };
+		FE97F2512F3C5B4C0066D3C5 /* PhikriData in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F2502F3C5B4C0066D3C5 /* PhikriData */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE2E4D6D2F34B9E1000C7968 /* PhikriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhikriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2E4D702F34B9E1000C7968 /* PhikriAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhikriAppApp.swift; sourceTree = "<group>"; };
 		FE2E4D722F34B9E1000C7968 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE2E4D742F34B9E3000C7968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2E4D772F34B9E3000C7968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE97F2452F3C48EE0066D3C5 /* ThoughtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtViewModel.swift; sourceTree = "<group>"; };
+		FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE97F24F2F3C5B410066D3C5 /* PhikriDomain in Frameworks */,
+				FE97F2512F3C5B4C0066D3C5 /* PhikriData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +43,7 @@
 			children = (
 				FE2E4D6F2F34B9E1000C7968 /* PhikriApp */,
 				FE2E4D6E2F34B9E1000C7968 /* Products */,
+				FE97F24D2F3C5B410066D3C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +58,9 @@
 		FE2E4D6F2F34B9E1000C7968 /* PhikriApp */ = {
 			isa = PBXGroup;
 			children = (
-				FE2E4D702F34B9E1000C7968 /* PhikriAppApp.swift */,
+				FE97F2472F3C49020066D3C5 /* Core */,
+				FE97F2482F3C490F0066D3C5 /* Features */,
 				FE2E4D722F34B9E1000C7968 /* ContentView.swift */,
-				FE2E4D742F34B9E3000C7968 /* Assets.xcassets */,
 				FE2E4D762F34B9E3000C7968 /* Preview Content */,
 			);
 			path = PhikriApp;
@@ -65,6 +72,38 @@
 				FE2E4D772F34B9E3000C7968 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE97F2472F3C49020066D3C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FE2E4D702F34B9E1000C7968 /* PhikriAppApp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FE97F2482F3C490F0066D3C5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FE97F24A2F3C493C0066D3C5 /* ThoughtList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FE97F24A2F3C493C0066D3C5 /* ThoughtList */ = {
+			isa = PBXGroup;
+			children = (
+				FE97F2452F3C48EE0066D3C5 /* ThoughtViewModel.swift */,
+				FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */,
+			);
+			path = ThoughtList;
+			sourceTree = "<group>";
+		};
+		FE97F24D2F3C5B410066D3C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,10 @@
 			dependencies = (
 			);
 			name = PhikriApp;
+			packageProductDependencies = (
+				FE97F24E2F3C5B410066D3C5 /* PhikriDomain */,
+				FE97F2502F3C5B4C0066D3C5 /* PhikriData */,
+			);
 			productName = PhikriApp;
 			productReference = FE2E4D6D2F34B9E1000C7968 /* PhikriApp.app */;
 			productType = "com.apple.product-type.application";
@@ -126,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2E4D782F34B9E3000C7968 /* Preview Assets.xcassets in Resources */,
-				FE2E4D752F34B9E3000C7968 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2E4D732F34B9E1000C7968 /* ContentView.swift in Sources */,
+				FE97F2462F3C48EE0066D3C5 /* ThoughtViewModel.swift in Sources */,
+				FE97F24C2F3C498F0066D3C5 /* ThoughtListView.swift in Sources */,
 				FE2E4D712F34B9E1000C7968 /* PhikriAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -337,6 +381,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE97F24E2F3C5B410066D3C5 /* PhikriDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhikriDomain;
+		};
+		FE97F2502F3C5B4C0066D3C5 /* PhikriData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhikriData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE2E4D652F34B9E1000C7968 /* Project object */;
 }
