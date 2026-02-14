@@ -5,7 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "PhikriDomain",
-    products: [
+    platforms: [
+        .iOS(.v15) // აქ უნდა ეწეროს .v15 და არა .v13
+    ], products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PhikriDomain",

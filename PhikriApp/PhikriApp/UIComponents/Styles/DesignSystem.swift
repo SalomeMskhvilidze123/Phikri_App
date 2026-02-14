@@ -32,7 +32,7 @@ public enum AppRadius {
 
 // შენი Mood-ფერების პალიტრა
 public enum AppColors {
-    public static let background = Color(hex: "F8F9FA")
+    public static let background = Color(hex: "F8F9FA") 
     public static let accent = Color(hex: "5E60CE") // Phikri-ს მთავარი ფერი
     
     public enum Mood {

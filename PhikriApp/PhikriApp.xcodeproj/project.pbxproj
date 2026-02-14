@@ -15,6 +15,8 @@
 		FE97F24F2F3C5B410066D3C5 /* PhikriDomain in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F24E2F3C5B410066D3C5 /* PhikriDomain */; };
 		FE97F2512F3C5B4C0066D3C5 /* PhikriData in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F2502F3C5B4C0066D3C5 /* PhikriData */; };
 		FE97F2552F3DD3900066D3C5 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */; };
+		FEE12A692F404DAF003390C7 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE12A682F404DAF003390C7 /* ThoughtCell.swift */; };
+		FEE12A6B2F404E7D003390C7 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE12A6A2F404E7D003390C7 /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FE97F2452F3C48EE0066D3C5 /* ThoughtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtViewModel.swift; sourceTree = "<group>"; };
 		FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtListView.swift; sourceTree = "<group>"; };
 		FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		FEE12A682F404DAF003390C7 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
+		FEE12A6A2F404E7D003390C7 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Hex.swift"; path = "../../../../Color+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */,
+				FEE12A6A2F404E7D003390C7 /* Color+Hex.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		FE97F2562F3DD3AD0066D3C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FEE12A682F404DAF003390C7 /* ThoughtCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,9 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE12A6B2F404E7D003390C7 /* Color+Hex.swift in Sources */,
 				FE2E4D732F34B9E1000C7968 /* ContentView.swift in Sources */,
 				FE97F2552F3DD3900066D3C5 /* DesignSystem.swift in Sources */,
 				FE97F2462F3C48EE0066D3C5 /* ThoughtViewModel.swift in Sources */,
+				FEE12A692F404DAF003390C7 /* ThoughtCell.swift in Sources */,
 				FE97F24C2F3C498F0066D3C5 /* ThoughtListView.swift in Sources */,
 				FE2E4D712F34B9E1000C7968 /* PhikriAppApp.swift in Sources */,
 			);
