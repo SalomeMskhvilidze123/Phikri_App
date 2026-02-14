@@ -14,6 +14,7 @@
 		FE97F24C2F3C498F0066D3C5 /* ThoughtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */; };
 		FE97F24F2F3C5B410066D3C5 /* PhikriDomain in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F24E2F3C5B410066D3C5 /* PhikriDomain */; };
 		FE97F2512F3C5B4C0066D3C5 /* PhikriData in Frameworks */ = {isa = PBXBuildFile; productRef = FE97F2502F3C5B4C0066D3C5 /* PhikriData */; };
+		FE97F2552F3DD3900066D3C5 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FE2E4D772F34B9E3000C7968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE97F2452F3C48EE0066D3C5 /* ThoughtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtViewModel.swift; sourceTree = "<group>"; };
 		FE97F24B2F3C498F0066D3C5 /* ThoughtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtListView.swift; sourceTree = "<group>"; };
+		FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FE97F2472F3C49020066D3C5 /* Core */,
 				FE97F2482F3C490F0066D3C5 /* Features */,
 				FE2E4D722F34B9E1000C7968 /* ContentView.swift */,
+				FE97F2522F3DD31A0066D3C5 /* UIComponents */,
 				FE2E4D762F34B9E3000C7968 /* Preview Content */,
 			);
 			path = PhikriApp;
@@ -104,6 +107,30 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE97F2522F3DD31A0066D3C5 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FE97F2532F3DD36D0066D3C5 /* Styles */,
+				FE97F2562F3DD3AD0066D3C5 /* Components */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FE97F2532F3DD36D0066D3C5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FE97F2542F3DD3900066D3C5 /* DesignSystem.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		FE97F2562F3DD3AD0066D3C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2E4D732F34B9E1000C7968 /* ContentView.swift in Sources */,
+				FE97F2552F3DD3900066D3C5 /* DesignSystem.swift in Sources */,
 				FE97F2462F3C48EE0066D3C5 /* ThoughtViewModel.swift in Sources */,
 				FE97F24C2F3C498F0066D3C5 /* ThoughtListView.swift in Sources */,
 				FE2E4D712F34B9E1000C7968 /* PhikriAppApp.swift in Sources */,

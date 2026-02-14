@@ -10,10 +10,6 @@ import CoreData
 import PhikriDomain
 
 
-import Foundation
-import CoreData
-import PhikriDomain
-
 public final actor CoreDataThoughtRepository: ThoughtRepositoryProtocol {
     private let container: NSPersistentContainer
     
